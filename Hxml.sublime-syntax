@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+# http://www.sublimetext.com/docs/3/syntax.html
+name: Hxml
+file_extensions:
+  - hxml
+scope: source.hxml
+contexts:
+  main:
+    - match: (-cpp?|-js|-as3|-swf-(header|version|lib)|-swf9?|-neko|-python|-php|-cs|-java|-xml|-x|-main|-lib|-D|-resource|-exclude|-v|-debug|-prompt|-cmd|-dce|--flash-strict|--no-traces|--flash-use-stage|--neko-source|--gen-hx-classes|-java-lib|-net-lib|--each|--next|--display|--no-output|--times|--no-inline|--no-opt|--php-front|--php-lib|--php-prefix|--remap|-help|--help|-java|-cs|--dead-code-elimination|--js-modern|--interp|--macro|--dce|--wait|--connect|--cwd|--help-defines|--run)
+      scope: keyword.other.hxml
+    - match: (#).*$\n?
+      scope: comment.line.number-sign.hxml
+      captures:
+        1: punctuation.definition.comment.actionscript
