@@ -239,7 +239,7 @@ contexts:
         - include: block
         - include: block-contents
   modifiers:
-    - match: \b(public|private|static|dynamic|inline|macro|extern|override)\b
+    - match: \b(public|private|static|dynamic|inline|macro|extern|override|final)\b
       scope: storage.modifier.haxe
   modifiers-inheritance:
     - match: \b(implements|extends)\b
